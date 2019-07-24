@@ -81,13 +81,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lucaswebpage/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="196">
               <caret line="128" column="40" selection-start-line="128" selection-start-column="40" selection-end-line="128" selection-end-column="40" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lucaswebpage/static/glasgow.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/glasgow.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/media/images/PCGS3762.JPG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -152,18 +167,13 @@
             <path>
               <item name="LucasSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="LucasSite" type="462c0819:PsiDirectoryNode" />
-              <item name="LucaSite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LucasSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LucasSite" type="462c0819:PsiDirectoryNode" />
-              <item name="lucaswebpage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LucasSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LucasSite" type="462c0819:PsiDirectoryNode" />
-              <item name="lucaswebpage" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LucasSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LucasSite" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -282,9 +292,6 @@
           <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/images/PCGS3762.JPG">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/jobs/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -417,6 +424,15 @@
           <caret line="128" column="40" selection-start-line="128" selection-start-column="40" selection-end-line="128" selection-end-column="40" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lucaswebpage/static/glasgow.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/glasgow.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/images/PCGS3762.JPG">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>

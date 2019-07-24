@@ -50,7 +50,7 @@
                   <a class="nav-item nav-link" href="#">Aunties & Uncles</a>
                   <a class="nav-item nav-link" href="#">Grandparents</a>
                   <a class="nav-item nav-link" href="#">Trust Fund</a>
-                  <a class="nav-item nav-link" href="#">Blog</a>
+                  <a class="nav-item nav-link active" href="#">Blog</a>
                   <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
               </div>
           </div>
@@ -58,45 +58,24 @@
   </header>
 
 <main role="main">
+    <div class ="container">
+    <h1 class ="text-center pt-3"> Welcome to Luca's Blog</h1>
+    <br />
+    <br />
+    <h2> Latest posts </h2>
+    <hr />
 
-  <section class="jumbotron text-center">
-    <div class="container">
-      <h1 class="jumbotron-heading">Luca Tarlowski Curran</h1>
-      <p class="lead text-muted">Hello, my name is Luca Stefan Francis Tarlowski Curran and welcome to my website! I was born on the 17th November 2018 at 00:45am and weighed in at a whopping 6.8 lbs. I am so happy to be alive and I'd like to share my life with you so far...</p>
-      <p>
-        <a href="mailto:jordangallacher@hotmail.com" class="btn btn-primary my-2">Email Me</a>
-        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-      </p>
-    </div>
-  </section>
+    {% for blog in blogs.all %}
+        <a href =""><h3> {{ blog.title }} </h3></a>
 
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-
-        <div class="row">
-
-        {% for job in jobs.all %}
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" src = "{{ job.image.url }}" />
-            <div class="card-body">
-              <p class="card-text">{{ job.summary}}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <!--  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
+    {{ blog.pub_date_pretty}}
+    <br/>
+    <img class='img-fluid' src="{{ blog.image.url }}" height="200" width="200"/>
+    <br/>
+        <p>{{ blog.summary }} </p>
         {% endfor %}
-      </div>
-    </div>
-  </div>
 
+    </div>
 </main>
 
 <footer class="text-muted">

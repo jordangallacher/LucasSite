@@ -1,3 +1,7 @@
+
+
+
+
 """
 Django settings for lucaswebpage project.
 
@@ -143,7 +147,7 @@ PAYPAL_TEST = True
 
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
 

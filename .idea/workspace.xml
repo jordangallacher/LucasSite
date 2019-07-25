@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jobs/templates/jobs/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="88" column="56" selection-start-line="88" selection-start-column="56" selection-end-line="88" selection-end-column="56" />
+            <state relative-caret-position="261">
+              <caret line="88" column="120" selection-start-line="88" selection-start-column="120" selection-end-line="88" selection-end-column="120" />
             </state>
           </provider>
         </entry>
@@ -152,7 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-2" />
     <option name="y" value="6" />
     <option name="width" value="1007" />
@@ -181,14 +181,7 @@
               <item name="LucasSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="LucasSite" type="462c0819:PsiDirectoryNode" />
               <item name="jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LucasSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LucasSite" type="462c0819:PsiDirectoryNode" />
-              <item name="jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="jobs" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LucasSite" type="b2602c69:ProjectViewProjectNode" />
@@ -263,7 +256,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23972602" />
@@ -472,8 +465,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jobs/templates/jobs/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="88" column="56" selection-start-line="88" selection-start-column="56" selection-end-line="88" selection-end-column="56" />
+        <state relative-caret-position="261">
+          <caret line="88" column="120" selection-start-line="88" selection-start-column="120" selection-end-line="88" selection-end-column="120" />
         </state>
       </provider>
     </entry>

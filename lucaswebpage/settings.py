@@ -140,3 +140,10 @@ MEDIA_URL = '/media/'
 PAYPAL_RECEIVER_EMAIL = ''
 
 PAYPAL_TEST = True
+
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
+

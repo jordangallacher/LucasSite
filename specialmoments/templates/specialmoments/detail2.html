@@ -1,15 +1,15 @@
+{{ specialmoments.title }}
 
 <!doctype html>
 <html lang="en">
-
   <head>
-    {% load staticfiles %}  <!-- This is very important must be added Nick stressed this!-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Prototype Luca's homepage</title>
+      {% load staticfiles %}  <!-- This is very important must be added Nick stressed this!-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Jekyll v3.8.5">
+      <title>{{ blog.title }}</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
 
@@ -47,13 +47,13 @@
               <div class="navbar-nav ml-auto">
                   <a class="nav-item nav-link" href="https://www.facebook.com/luca.tarlowskicurran.7">Facebook </a>
                   <a class="nav-item nav-link" href="https://www.instagram.com/lucatarlowskicurran/?hl=en">Instagram </a>
-                  <a class="nav-item nav-link" href="{% url 'allmoments' %}">Special moments</a>
+                  <a class="nav-item nav-link" href="#">Special moments</a>
                   <a class="nav-item nav-link" href="#">Mummy</a>
                   <a class="nav-item nav-link" href="#">Daddy</a>
                   <a class="nav-item nav-link" href="#">Aunties & Uncles</a>
                   <a class="nav-item nav-link" href="#">Grandparents</a>
                   <a class="nav-item nav-link" href="#">Trust Fund</a>
-                  <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
+                  <a class="nav-item nav-link active" href="{% url 'allblogs' %}">Blog</a>  <!-- active illuminates the nav bar location i.e. where you are are! -->
                   <!-- <a class="nav-item nav-link" href="{% static 'Jordan Gallacher CV 2019.pdf' %}">Resume</a> -->
                   <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
               </div>
@@ -62,48 +62,20 @@
   </header>
 
 <main role="main">
+    <div class ="container">
+    <h1 class ="text-center pt-3"> {{ specialmoments.title }} </h1>
 
-    <section class="jumbotron text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">Luca Tarlowski Curran</h1>
-            <p class="lead text-muted">Hello, my name is Luca Stefan Francis Tarlowski Curran and welcome to my website!
-                I was born on the 17th November 2018 at 00:45am and weighed in at a whopping 6.8 lbs. I am so happy to
-                be alive and I'd like to share my life with you so far...</p>
-            <p>
-                <a href="mailto:lucatarlowskicurran@gmail.com" class="btn btn-primary my-2">Email Me</a>
-               <!-- <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
-            </p>
-            <img class='img-fluid' src="{% static 'dads.jpg' %}" height="400" width="400"/>
-        </div>
-    </section>
+    <br />
+    <hr />
 
-  <div class="album py-5 bg-light">
-    <div class="container">
+    <p class="text-center">{{ specialmoments.pub_date_pretty}} </p>
 
-
-        <div class="row">
-
-        {% for job in jobs.all %}
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" class='img-fluid' src = "{{ job.image.url }}" /> <!-- height="400" width="400" -->
-            <div class="card-body">
-              <p class="card-text">{{ job.summary}}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <!--  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                </div>
-                <!-- <small class="text-muted">9 mins</small> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
+    <br/>
+    <img class='img-fluid' src="{{ specialmoments.image.url }}" />
+    <br/>
+      <br/>
+        <p>{{ specialmoments.body }} </p>
     </div>
-  </div>
-
 </main>
 
 <footer class="text-muted">

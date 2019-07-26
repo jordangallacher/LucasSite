@@ -35,9 +35,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'specialmoments.apps.SpecialmomentsConfig',
     'jobs.apps.JobsConfig',
     'blog.apps.BlogConfig',
+    'specialmoments.apps.SpecialmomentsConfig',
+    'mummy.apps.MummyConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

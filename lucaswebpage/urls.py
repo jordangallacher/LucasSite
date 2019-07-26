@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path() need PayPal path
     path('', jobs.views.home, name='home'),
+    path('blog/', include('blog.urls')),
     path('specialmoments/', include('specialmoments.urls')),
-    path('blog/', include('blog.urls'))
+    path('mummy/', include('mummy.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

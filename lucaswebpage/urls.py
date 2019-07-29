@@ -26,4 +26,7 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('specialmoments/', include('specialmoments.urls')),
     path('mummy/', include('mummy.urls')),
+    path('daddy/', include('daddy.urls')),
+    path('auntiesuncles/', include('auntiesuncles.urls')),
+    path('grandparents/', include('grandparents.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

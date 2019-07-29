@@ -48,10 +48,10 @@
                   <a class="nav-item nav-link" href="https://www.facebook.com/luca.tarlowskicurran.7">Facebook </a>
                   <a class="nav-item nav-link" href="https://www.instagram.com/lucatarlowskicurran/?hl=en">Instagram </a>
                   <a class="nav-item nav-link" href="#">Special moments</a>
-                  <a class="nav-item nav-link" href="#">Mummy</a>
-                  <a class="nav-item nav-link" href="#">Daddy</a>
-                  <a class="nav-item nav-link" href="#">Aunties & Uncles</a>
-                  <a class="nav-item nav-link" href="#">Grandparents</a>
+                  <a class="nav-item nav-link" href="{% url 'allmummy' %}">Mummy</a>
+                  <a class="nav-item nav-link" href="{% url 'alldaddy' %}">Daddy</a>
+                  <a class="nav-item nav-link" href="{% url 'allauntiesuncles' %}">Aunties & Uncles</a>
+                  <a class="nav-item nav-link" href="{% url 'allgrandparents' %}">Grandparents</a>
                   <a class="nav-item nav-link" href="#">Trust Fund</a>
                   <a class="nav-item nav-link active" href="{% url 'allblogs' %}">Blog</a>  <!-- active illuminates the nav bar location i.e. where you are are! -->
                   <!-- <a class="nav-item nav-link" href="{% static 'Jordan Gallacher CV 2019.pdf' %}">Resume</a> -->

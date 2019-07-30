@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'daddy.apps.DaddyConfig',
     'auntiesuncles.apps.AuntiesunclesConfig',
     'grandparents.apps.GrandparentsConfig',
+    'trustfund.apps.TrustfundConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -146,9 +147,9 @@ MEDIA_URL = '/media/'
 
 #django-paypal settings
 
-PAYPAL_RECEIVER_EMAIL = ''
-
-PAYPAL_TEST = True
+PAYPAL_RECEIVER_EMAIL = 'lucatarlowskicurran@gmail.com'
+#PAYPAL_RECEIVER_EMAIL = 'sb-hjnwg40385@business.example.com'
+PAYPAL_TEST = False
 
 
 try:

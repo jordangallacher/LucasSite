@@ -21,7 +21,8 @@ import jobs.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path() need PayPal path
+    path('paypal/', include('paypal.standard.ipn.urls')),
+    path('trustfund/', include('trustfund.urls')),
     path('', jobs.views.home, name='home'),
     path('blog/', include('blog.urls')),
     path('specialmoments/', include('specialmoments.urls')),
@@ -29,4 +30,5 @@ urlpatterns = [
     path('daddy/', include('daddy.urls')),
     path('auntiesuncles/', include('auntiesuncles.urls')),
     path('grandparents/', include('grandparents.urls')),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
